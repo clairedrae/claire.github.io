@@ -1,20 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'EB Garamond';
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
 }
 body {
-    background: rgb(0, 0, 0);
+    background: rgb(255, 254, 236);
     color:antiquewhite;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/tutorialImages/background.png);
+    background-image: url(images/Portfolio/Procreate/Screenshot\ 2023-11-17\ at\ 4.27.11\ PM.png);
     background-size: cover;
     background-position: center;
 }
@@ -46,7 +46,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #1bb586;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -64,7 +64,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: #1bb586;
 }
 /*------------about-------------*/
 #about{
@@ -89,7 +89,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: white;
+    color: #1bb586;
 }
 .tab-titles{
     display: flex;
@@ -106,7 +106,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #1bb586;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -120,7 +120,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #1bb586;
     font-size: 14px;
 }
 .tab-contents{
@@ -155,7 +155,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6),#1bb586);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -184,13 +184,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #1bb586;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: white;
+    color: #1bb586;
     transition: background 0.5s;
+    transition: color 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #1bb586;
+    color: white;
 }
