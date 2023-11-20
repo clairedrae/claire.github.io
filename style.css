@@ -1,5 +1,12 @@
-body {
+* {
     margin: 0;
-    background: blue;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(114, 114, 190);
+    color:antiquewhite;
     text-align: center;
 }
