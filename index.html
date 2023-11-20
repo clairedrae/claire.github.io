@@ -7,7 +7,107 @@
  </head>
  <body>
     <div id="header">
-        
+        <div class="container">
+            <nav>
+                <img src="images/tutorialImages/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>dev, des, and artist</p>
+                <h1>Hi, I'm <span>Claire</span>!</h1>
+            </div>
+        </div>
     </div>
+    <!------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/tutorialImages/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellat, quas cumque laudantium magni repellendus expedita saepe perspiciatis. Qui, excepturi. Recusandae, quam libero natus id laudantium pariatur quibusdam iste officia.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Develipment</li>
+                            <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jun-Sep 2023</span><br>Software Engineer Intern @ LinkedIn</li>
+                            <li><span>Sep-Dec 2022</span><br>Software Development Engineer Intern @ AWS</li>
+                            <li><span>Jan 2022-Apr 2023</span><br>Dartmouth Economics Research Scholar PI. Patricia Anderson</li>
+                            <li><span>Jan-Jun 2022</span><br>Undergraduate TA for Computer Science @ Dartmouth College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>BA in Computer Science modified with Digital Art and Economics from Dartmouth College</li>
+                            <li><span>2016-2020</span><br>HS Diploma from Miramonte High Schoolt</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/tutorialImages/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tutorialImages/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tutorialImages/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
 </body>
  </html>
