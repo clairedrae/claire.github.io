@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond';
+    box-sizing: border-box;
+}
+body {
+    background: rgb(255, 254, 236);
+    color:antiquewhite;
+}
+.title {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    color: #1bb586;
+}
+.home-nav {
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+    color: #1bb586;
+}
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); /* Adjusted for two images per row */
+    gap: 15px;
+    padding: 20px;
+}
+.photo {
+    overflow: hidden;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1px;
+}
