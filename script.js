@@ -40,11 +40,18 @@ function getPhotoGallery(galleryName) {
     // Replace with the actual paths and captions for your photos
     var galleries = {
         'Leafy_Learn': [
-            { path: 'images/Portfolio/LeafyLearn/leafy_title_shot.png', caption: 'Leafy Learn, 2024 made with Unity and Maya' },
+            { path: 'images/Portfolio/LeafyLearn/leafy_title_shot.png', caption: 'Leafy Learn, 2024 made with Unity and Maya: https://leafylearn.site/' },
             { path: 'images/Portfolio/LeafyLearn/game_play.png', caption: 'Sample Game Play' },
             { path: 'images/Portfolio/LeafyLearn/characters.png', caption: 'Forest Guide/Teacher Mushu the Bear and the player\'s character' },
             { path: 'images/Portfolio/LeafyLearn/game_map.png', caption: 'Players must traverse the whole game map and complete different levels' },
             { path: 'images/Portfolio/LeafyLearn/title_screen.png', caption: 'Check out leafy learn here:  https://leafylearn.site/' }
+        ],
+        'Hunt_Game': [
+            { path: 'images/Portfolio/HuntGame/STILL_SHOT_2.jpg', caption: 'Hunt, 2024 made with React JS: https://hunt-game.com/' },
+            { path: 'images/Portfolio/HuntGame/shot1.png', caption: 'Intro Page' },
+            { path: 'images/Portfolio/HuntGame/shot2.png', caption: 'Sample Game Play' },
+            { path: 'images/Portfolio/HuntGame/STILL_SHOT_8.jpg', caption: 'Background Image made in Maya' },
+            { path: 'images/Portfolio/HuntGame/intro.gif', caption: 'Check out hunt here: https://hunt-game.com/' }
         ],
         'Draeger_abstractRender': [
             { path: 'images/Portfolio/Maya/Draeger_abstractRender.jpg', caption: 'Birth of Aphrodite, 2022 made in Maya' }
