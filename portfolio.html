@@ -3,18 +3,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍓</text></svg>">
     <link rel="stylesheet" href="portfoliostyle.css">
 </head>
 <body>
     <!----------------------title------------------------>
     <div class="home-nav">
-        <a href="index.html">back</a>
+        <a href="index.html"><img src="images/Portfolio/home_icon.png" alt="home icon" width="30px"></a>
     </div>
     <div class="title">
         <h1>Portfolio</h1>
     </div>
     <div id="portfolio">
     <div class="photo-grid">
+        <div class="photo" onclick="openModal('Leafy_Learn', 0)">
+            <img src="images/Portfolio/LeafyLearn/leafy_title_shot.png">
+            <div class="layer">
+                <h3>Leafy Learn</h3>
+                <p>Unity game to teach programming in a fun, approachable way.</p>
+            </div>
+        </div>
         <div class="photo" onclick="openModal('Draeger_abstractRender', 0)">
             <img src="images/Portfolio/Maya/Draeger_abstractRender.jpg">
             <div class="layer">
